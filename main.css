@@ -1,3 +1,41 @@
+/* dark green : #556b2f */
+/* light green : #6b8e23
+yellow:#808000 */
+.hoverTable{
+	background-color: #fff;
+}
+.hoverTable tr:hover {
+          background-color: rgba(20,54,1,0.6);
+          color: #fff;
+}
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.counter{
+	font-size: 200px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #FFEBCD;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4C3E24;
+  width: 0%;
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -5,6 +43,7 @@
 }
 body{
 	font-family: 'Roboto', sans-serif;
+	background: #FFEBCD;
 
 }
 .nav-bg{
@@ -18,13 +57,14 @@ body{
 	outline: none!important;
 }
 
-/* hero new */
+/*===================== hero new======================= */
 
 #hero{
 	display: table;
 	width: 100%;
 	height: 100vh;
-	background: url(./heropic.jpg) top center;
+	background-image: linear-gradient(rgba(49, 0, 255, .4), rgba(132, 5, 29, .4)), url(./heropic.jpg);
+	/*background: url(./heropic.jpg) top center;*/
 	background-size: cover;
 }
 
@@ -52,7 +92,7 @@ body{
 	margin:30px 0 10px 0;
 	line-height: 48px;
 	text-transform: uppercase;
-	color:#2b3618;
+	color:#fff;
 }
 
 @media(max-width:768px){
@@ -83,7 +123,7 @@ body{
 
 #hero .btn-get-started{
 	background:#243618 ;
-	border: 2px sold olive;
+	border: 2px sold #cdcd00;
 	color:white;
 
 }
@@ -96,123 +136,10 @@ body{
 
 }
 
-
-/* hero new end */
-
-/* #hero{
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-	position: relative;
-}
-#hero:after{
-	content:'';
-	position: absolute;
-	left: 50%;
-	top: 0;
-	width: 130%;
-	height: 95%;
-	background:linear-gradient(to right,rgba(110,155,39,0.6),rgba(20,54,1,0.4)),url("https://swall.teahub.io/photos/small/56-563260_awesome-nature-wallpapers-forest-wallpaper-1080p.jpghttps://swall.teahub.io/photos/small/56-563260_awesome-nature-wallpapers-forest-wallpaper-1080p.jpg")center top no-repeat;
-	z-index: 0;
-	border-radius: 0 0 50% 50%;
-	transform:translateX(-50%) rotate(0deg);
-}
-#hero:before{
-	content:'';
-	position: absolute;
-	left: 50%;
-	top:0;
-	width: 130%;
-	height: 96%;
-	background:rgba(110,155,39,0.8);
-	opacity: 0.3;
-	z-index: 0;
-	border-radius: 0 0 50% 50%;
-	transform:translateX(-50%)translateY(18px)  rotate(2deg);
-}
-#hero .carousel-container{
-	display:flex;
-	justify-content:center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-#hero h2{
-	color: #fff;
-	margin-bottom: 30px;
-	font-size: 48px; 
-	font-weight: bold;
-}
-#hero p{
-	width:80%;
-	animation-delay: 0.4s;
-	margin:0 auto 30px auto;
-	color:#fff;
-}
-#hero .carousel-control-prev,#hero .carousel-control-next{
-	width: 10%;
-}
-#hero .carousel-control-next-icon, #hero .carousel-control-prev-icon{
-background:none;
-font-size: 48px;
-line-height: 1;
-width: auto;
-height:auto;
-}
-#hero .hero-btn{
-	font-weight: bold;
-	font-size: 16px;
-	letter-spacing: 1px;
-	display:inline-block;
-	padding: 12px 32px;
-	border-radius: 50px;
-	transition: 0.5s;
-	line-height: 1;
-	margin: 10px;
-	color: #fff;
-	animation-delay: 0.5s;
-	border:2px solid #9ef596;
-}
-#hero .hero-btn:hover{
-	background:#0a6801;
-	color: #fff;
-	text-decoration: none;
-
-}
-@media(min-width: 1024px){
-	#hero p{
-		width:60%;
-	}
-	#hero .carousel-control-prev,
-	#hero .carousel-control-next{
-		width: 5%;
-
-	}
-}
-@media(max-width:768px){
-	#hero h2{
-		font-size: 28px;
-	}
-	#hero:after{
-		width:180%;
-		height:95%;
-		border radius:0 0 50% 50%;
-		transform:translateX(-50%)rotate(0deg);
-	}
-	#hero:before{
-		top: 0;
-		width: 180%;
-		height: 94%;
-		border-radius: 0 0 50% 50%;
-		tranform: translateX(-50%)translateY(20px)rotate(4deg) ;
-	}
-} */
+/*================= hero new ends================ */
 
 /*======ABOUT US======*/
+
 .tabs .nav-pills .nav-item{
 	margin-bottom: 10px;
 }
@@ -233,7 +160,7 @@ height:auto;
 }
 .tabs .nav-pills .nav-item .nav-link.active{
 	color: #fff;
-	background: #053001;
+	background: #556b2f;
 	border: 1px solid #9ef596;
 }
 .tabs .nav-pills .nav-item .nav-link.active span{
@@ -254,13 +181,14 @@ height:auto;
 .tabs .tab-content h3 a{
 	color: #000;
 }
+
 /*======END OF ABOUT US======*/
+/*=================STORIES==================*/
 
-
-/*======STORIES======*/
 .story-box{
+	color:#fff
 	padding: 15px;
-	background: #c6f8bc;
+	background: #6b8e23;
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -300,27 +228,27 @@ height:auto;
 	content: '';
 	width: 50%;
 	height: 100%;
-	background: #053001;
+	background: #556b2f;
 	position: absolute;
 	top: 0;
 	left: 0;
 	border-radius: 10px 0px 0px 10px;
 }
 .overlay:hover:before{
-	background: #053001;
+	background: #556b2f;
 	width: 100%;
 	border-radius: 10px;
 }
-/*======END OF STORIES======*/
 
+/*=================END OF STORIES====================*/
+/*=================OUR PROJECTS SECTION================*/
 
-/*======OUR PROJECTS SECTION======*/
 .project-container{
-	background: #136d01;
+	/* background: #136d01; */
 	position: relative;
 	overflow: hidden;
 }
-.donation{
+/* .donation{
 	background: #7ff767;
 	color: #000;
 	padding: 3px 3.5px;
@@ -335,7 +263,7 @@ height:auto;
 }
 .project-container:hover .donation{
 	transform: translateX(0%);
-}
+} */
 .outline{
 	display: inline-block;
 	vertical-align: middle;
@@ -346,7 +274,7 @@ height:auto;
 .outline:before{
 	content: '';
 	position: absolute;
-	border: #7ff767 solid 4px;
+	/* border: #7ff767 solid 4px; */
 	top: 4px;
 	left: 4px;
 	right: 4px;
@@ -364,130 +292,107 @@ height:auto;
 	display: inline-block;
 	vertical-align: middle;
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 10px #7ff767;
+	/* box-shadow: 0 0 10px #7ff767; */
 	transition-duration: 0.3s;
-	transition-property: box-shadow, transform;
+	/* transition-property: box-shadow, transform; */
 }
 .grow:hover,
 .grow:focus,
 .grow:active{
-	box-shadow: 0 10px 10px 5px #7ff767;
+	/* box-shadow: 0 10px 10px 5px #7ff767; */
 	transform: scale(1.1);
 }
-/*======END OF OUR PROJECTS SECTION======*/
 
+/* /======END OF OUR PROJECTS SECTION======/ */
+ /*===============Project Section1=============== */
 
-.box
-{
-  position: relative;
-  width: 280px;
-  height: 400px;
-  margin: 20px 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.box .content
-{
-  
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 55%;
-  padding: 20px;
-  box-sizing: border-box;
-  text-align: center;
-  
-}
-.box .content h2
-{
-  margin: 0;
-  padding: 0;
-}
-.box .content a
-{
-  text-decoration: none;
-  background: #556b2f;
-  color: #fff;
-  padding: 5px;
-  display: inline-block;
-}
-.box .content h2,
-.box .content p,
-.box .content a
-{
-  opacity: 0;
-  transition: 0.7s;
-  transform: translateY(20px);
-}
-
-.box:hover{
-	border:7px solid #053001;
-	transition: 0.7s;
-}
-.box:hover .content h2
-{
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.7s
-}
- .box:hover .content p
-{
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.7s
-}
- .box:hover .content a
-{
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0.7s
-}
-/* end of first part */
-/* second part */
-
-.ribbon{
-    width: 100px;
-    height: 100px;
-    margin: -10px auto;
-    background: #f0d803; 
+  #project .project-item {
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #project .project-item .project-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  #project .project-item .project-link .project-hover {
+    display: flex;
     position: absolute;
-    top: 0;
-    right:0;
-}
-.ribbon:before{
-    content:"";
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    border-left: 75px solid #f0d803;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-}
-.ribbon:after{
-    content:"";
-    position: absolute;
-    bottom: -30px;
-    right: 0;
-    border-right: 75px solid #f0d803;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-
-}
-.text{
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 209, 54, 0.9);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.25s;
+  }
+  #project .project-item .project-link .project-hover 
+  .project-hover-content {
+    font-size: 1.25rem;
+    color: white;
+  }
+  #project .project-item .project-link:hover .project-hover {
+    opacity: 1;
+  }
+  #project .project-item .project-caption {
+    padding: 1.5rem;
     text-align: center;
-    
+    background-color: #fff;
+  }
+  #project .project-item .project-caption .project-caption-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  #project .project-item .project-caption .project-caption-subheading {
+    font-style: italic;
+   }
+  
+  .project-modal .modal-dialog {
+    margin: 1rem;
+    max-width: 100vw;
+  }
+  .project-modal .modal-content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    text-align: center;
+  }
+  .project-modal .modal-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .project-modal .modal-content p.item-intro {
+    font-style: italic;
+    margin-bottom: 2rem;
 }
-.btn-color{
-    background: #f0d803;
+  .project-modal .modal-content p {
+    margin-bottom: 2rem;
+  }
+  .project-modal .modal-content ul.list-inline {
+    margin-bottom: 2rem;
+  }
+  .project-modal .modal-content img {
+    margin-bottom: 2rem;
+  }
+  .project-modal .close-modal {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .project-modal .close-modal:hover {
+    opacity: 0.3;
+  }
+
+/* /=================End of Project1======================/ */
+/*==========Donation section starts==============*/
+#donatepls{
+	border:1px solid darkolivegreen;
 }
-/* end of second part */
-
-
-
-
-/*==========donation section starts==============*/
 .donation-form .input-field .input-group{
 	width: 100%;
 	border:1px solid #053001;
@@ -566,23 +471,135 @@ height:auto;
 	color: #9ef596;
 }
 
+/*==========Donation Ends==============*/
+/* ==============Blog Starts============ */
+
+.read-more-btn{
+	
+	
+}
 
 
 
-/*==========donation ends==============*/
 
 
+/* ==================Blog Ends======================== */
+/*==================== Contact Card Starts==================== */
+
+.box
+{
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.box .content
+{
+  
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+.box .content h2
+{
+  margin: 0;
+  padding: 0;
+}
+.box .content a
+{
+  text-decoration: none;
+  background: #556b2f;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+}
+.box .content h2,
+.box .content p,
+.box .content a
+{
+  opacity: 0;
+  transition: 0.7s;
+  transform: translateY(20px);
+}
+
+.box:hover{
+	border:7px solid #053001;
+	transition: 0.7s;
+}
+.box:hover .content h2
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+ .box:hover .content p
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+ .box:hover .content a
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+
+/* ===============end of first part================ */
+/* ==============second part===================== */
+
+.ribbon{
+    width: 100px;
+    height: 100px;
+    margin: -10px auto;
+    background: #cdcd00; 
+    position: absolute;
+    top: 0;
+    right:0;
+}
+.ribbon:before{
+    content:"";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    border-left: 75px solid #cdcd00;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.ribbon:after{
+    content:"";
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    border-right: 75px solid #cdcd00;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+
+}
+.text{
+    text-align: center;
+    
+}
+.btn-color{
+    background: #cdcd00;
+}
 
 
+/*================= end of second part ============*/
 
 
-
- /*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
 .contact .info {
   padding: 20px 40px;
-  background: #f7e759;
+  background:#C6D113   ;
   color: #131313;
   text-align: center;
   border: 1px solid #fff;
@@ -610,22 +627,10 @@ height:auto;
   border-radius: 50px;
 }
 
+/*=============== end of contact =======================*/
+/*===================Footer==================*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Footer*/
+/* ==============Team Card Begins=============== */
 .social{
 display: flex;
 width: 250px;
@@ -637,7 +642,7 @@ list-style: none;
   width:60px;
   height: 60px;
   border-radius: 50%;
-  background: #fff;
+  /* background: #fff; */
 }
 .social .list-item:after,
 .social .list-item:before{
@@ -656,6 +661,7 @@ list-style: none;
 }
 .social .list-item:after{
   filter: blur(20px);
+	/* background: #fff; */
 }
 .social .list-item:hover:before,
 .social .list-item:hover:after{
@@ -699,3 +705,4 @@ opacity: 1;
 .social .list-item:nth-child(4):after{
   background: linear-gradient(45deg,#0791c7, #f794a5);
 }
+/* Team Card End */
